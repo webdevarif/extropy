@@ -1,0 +1,35 @@
+$min-contrast-ratio: 3;
+$ff-primary: 'DM Sans', sans-serif;
+$ff-fa: "Font Awesome 5 Pro";
+
+$font-family-sans-serif: $ff-primary;
+
+
+$primary: #2E8DF3;
+$primary-alpha: #F1F8FF;
+$danger: #F55A2D;
+
+$border-color: #EBEBEB;
+$dropdown-border-color: $border-color;
+
+
+// NAVBAR
+$navbar-light-active-color: $primary;
+
+
+
+// Input Field
+$input-padding-y: 0.60rem;
+$input-padding-x: 1.25rem;
+$input-border-color: $border-color;
+
+
+// TABS LINKS
+// $nav-link-padding-y: 0.75rem;
+// $nav-link-padding-x: 1.5rem;
+$nav-link-color: #8293A0;
+$nav-tabs-border-radius: 0;
+$nav-tabs-link-active-color: $primary;
+$nav-tabs-link-active-bg: $primary-alpha;
+$nav-tabs-link-active-border-color: transparent;
+$nav-tabs-link-hover-border-color: $nav-tabs-link-active-border-color;

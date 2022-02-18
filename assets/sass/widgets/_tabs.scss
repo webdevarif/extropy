@@ -1,0 +1,32 @@
+.avs-tabs{
+    border: 1px solid $primary-alpha;
+    border-radius: 0.4rem;
+    font-size: 14px;
+
+    .nav-link:hover, .nav-link:focus{
+        background: $primary-alpha;
+    }
+
+    .nav-link:not(:last-child){
+        border-right: 1px solid $primary-alpha;
+
+    }
+
+    .nav-link.active{
+        position: relative;
+
+        &:after{
+            content: "";
+            width: 100%;
+            height: 3px;
+            background: $primary;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+.left-badge{
+    position: relative;
+}

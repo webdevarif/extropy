@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extropy || Html Templates</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- font-family: 'DM Sans', sans-serif; -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
+
+    <!-- Css FIles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- JS Default FIles -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <!-- JS Plugins -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.datetimepicker.full.min.js"></script>
+    <script src="assets/js/avatar-solution.js"></script>
+</head>
+
+<body>
+
+    <main class="main-wrapper">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo.svg" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase active" aria-current="page" href="#">Message</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="#">Valendar</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Property
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Property 01</a></li>
+                                    <li><a class="dropdown-item" href="#">Property 02</a></li>
+                                    <li><a class="dropdown-item" href="#">Property 03</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Property 04</a></li>
+                                    <li><a class="dropdown-item" href="#">Property 04</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                        <div class="header__end">
+                            <div class="btn-group">
+                                <button type="button" class="btn shadow-none dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                    <img src="https://via.placeholder.com/200x300" class="avatar rounded-circle me-2" alt="">
+                                    <span class="align-middle">Pattyh</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-lg-end">
+                                    <li><button class="dropdown-item" type="button"><i class="fal fa-cog me-2 align-middle"></i><span>Settings</span></button></li>
+                                    <li><button class="dropdown-item" type="button"><i class="fal fa-user me-2 align-middle"></i><span>need-id</span></button></li>
+                                    <li><button class="dropdown-item" type="button"><i class="fal fa-cog me-2 align-middle"></i><span>Change Password</span></button></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fal fa-power-off me-2 align-middle"></i><span>Log Out</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="main--content p-md-4">
+
+            <div class="heading-area mb-4">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h2 class="text-dark fs-xl">Inbox</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__filter mb-5">
+                <div class="container-fluid">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center" style="gap: 1.5rem">
+                                <div class="form-group w-100">
+                                    <input type="text" class="form-control" placeholder="Start Date" date-time-picker>
+                                </div>
+                                <div class="form-group w-100">
+                                    <input type="text" class="form-control" placeholder="End Date" date-time-picker>
+                                </div>
+                                <div class="form-group w-100">
+                                    <select name="" id="" class="form-select" nice-select>
+                                        <option value="#1">Select</option>
+                                        <option value="#1">Select 01</option>
+                                        <option value="#1">Select 02</option>
+                                        <option value="#1">Select 03</option>
+                                        <option value="#1">Select 04</option>
+                                        <option value="#1">Select 05</option>
+                                    </select>
+                                </div>
+                                <div class="form-group w-100">
+                                    <a href="#">Reset Search</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-light" placeholder="Search here">`
+                                <button class="btn btn-danger fs-sm px-5 text-uppercase">Go</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-table-box px-3">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-8 col-md-9">                    
+                        <div class="nav avs-tabs nav-tabs d-inline-flex" id="nav-tab" role="tablist">
+                            <button class="nav-link" id="nav-all-mail-tab" data-bs-toggle="tab" data-bs-target="#nav-all-mail" type="button" role="tab" aria-controls="nav-all-mail" aria-selected="false"><i class="fas fa-envelope align-middle me-3"></i><span>All</span></button>
+                            <button class="nav-link active" id="nav-pending-mail-tab" data-bs-toggle="tab" data-bs-target="#nav-pending-mail" type="button" role="tab" aria-controls="nav-pending-mail" aria-selected="true"><i class="fas fa-envelope align-middle me-3"></i><span>Pending (13)</span></button>
+                            <button class="nav-link" id="nav-need-id-tab" data-bs-toggle="tab" data-bs-target="#nav-need-id" type="button" role="tab" aria-controls="nav-need-id" aria-selected="false"><i class="fas fa-envelope align-middle me-3"></i><span>Need ID (13)</span></button>
+                            <button class="nav-link" id="nav-need-id-tab" data-bs-toggle="tab" data-bs-target="#nav-pinned" type="button" role="tab" aria-controls="nav-pinned" aria-selected="false"><i class="fas fa-map-pin align-middle me-3"></i><span>Pinned (13)</span></button>
+                            <button class="nav-link" id="nav-need-id-tab" data-bs-toggle="tab" data-bs-target="#nav-label" type="button" role="tab" aria-controls="nav-label" aria-selected="false"><i class="fas fa-map-pin align-middle me-3"></i><span>Label (13)</span></button>
+                            <button class="nav-link" id="nav-need-id-tab" data-bs-toggle="tab" data-bs-target="#nav-overdude" type="button" role="tab" aria-controls="nav-overdude" aria-selected="false"><i class="fas fa-map-pin align-middle me-3"></i><span>Overdue(13)</span></button>
+                            <button class="nav-link" id="nav-need-id-tab" data-bs-toggle="tab" data-bs-target="#nav-inquiries" type="button" role="tab" aria-controls="nav-inquiries" aria-selected="false"><i class="fas fa-question-circle align-middle me-3"></i><span>Inquiries(13)</span></button>
+                        </div>  
+                    </div>
+                    <div class="col-lg-4 col-md-3 text-md-end">
+                        <p class="fs-sm fw-bold mb-2">Last update: 01/03/2022 01:00AM EST</p>
+                    </div>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade" id="nav-all-mail" role="tabpanel" aria-labelledby="nav-all-mail-tab">
+                        <div class="table-cover">
+                            <table>
+                                <tbody>
+                                    <!-- Single Table Row -->
+                                    <tr>
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Ronda</td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td><button class="btn btn-primary text-nowrap">Level 2</button></td>
+                                        <td><button class="btn border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button></td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                   
+                                    <!-- Single Table Row -->
+                                    <tr>
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Ronda</td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td><button class="btn btn-primary text-nowrap">Level 2</button></td>
+                                        <td><button class="btn border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button></td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                   
+                                    <!-- Single Table Row -->
+                                    <tr>
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Ronda</td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td><button class="btn btn-primary text-nowrap">Level 2</button></td>
+                                        <td><button class="btn border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button></td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                   
+                                    <!-- Single Table Row -->
+                                    <tr>
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Ronda</td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td><button class="btn btn-primary text-nowrap">Level 2</button></td>
+                                        <td><button class="btn border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button></td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                   
+                                    <!-- Single Table Row -->
+                                    <tr>
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Ronda</td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td><button class="btn btn-primary text-nowrap">Level 2</button></td>
+                                        <td><button class="btn border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button></td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                   
+                                    <!-- Single Table Row -->
+                                    <tr>
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Ronda</td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td><button class="btn btn-primary text-nowrap">Level 2</button></td>
+                                        <td><button class="btn border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button></td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                   
+                                    <!-- Single Table Row -->
+                                    <tr>
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Ronda</td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td><button class="btn btn-primary text-nowrap">Level 2</button></td>
+                                        <td><button class="btn border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button></td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                   
+                                    <!-- Single Table Row -->
+                                    <tr>
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Ronda</td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td class="text-nowrap">
+                                            <img src="assets/svg/calendar-icon.svg" class=" align-middle me-2" alt="">
+                                            <span>02/11/2022</span>
+                                        </td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td><button class="btn btn-primary text-nowrap">Level 2</button></td>
+                                        <td><button class="btn border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button></td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="nav-pending-mail" role="tabpanel" aria-labelledby="nav-pending-mail-tab">
+                        <div class="table-cover">
+                            <table>
+                                <tbody>
+                                    <!-- Single Table Row -->
+                                    <tr class="left-badge left-badge-danger">
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><small class="text-muted max-500">Lorem Reprehenderit voluptatibus consequuntur illo repellendus explicabo veniam, saepe perferendis laudantium quam vel numquam odit totam optio, quaerat iusto, nobis iste nostrum. Incidunt, optio placeat nemo natus dolores velit culpa inventore quos officia animi. Accusamus!</small></td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td>
+                                            <h6 class="text-muted">02/11/2022 - 02/14/2022</h6>
+                                            <div class="btn-group-area gap-2 d-flex align-items-center">
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 2</button>
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 1</button>
+                                                <button class="btn btn-danger text-light btn-sm text-nowrap">
+                                                    <svg class="align-middle me-2" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_11_147)">
+                                                        <path d="M7.31789 0.500001C7.37433 0.4999 7.43024 0.510925 7.48242 0.532446C7.5346 0.553967 7.58203 0.585562 7.62199 0.625424L11.8742 4.87779C11.9548 4.95834 12 5.06758 12 5.18147C12 5.29537 11.9548 5.4046 11.8742 5.48515C11.4619 5.8975 10.9534 5.99028 10.5831 5.99028C10.4311 5.99028 10.2953 5.97482 10.1879 5.95678L7.49571 8.64909C7.56658 8.93465 7.61257 9.22582 7.63316 9.51932C7.67267 10.1224 7.60567 10.9686 7.01465 11.5596C6.9341 11.6401 6.82487 11.6854 6.71098 11.6854C6.59708 11.6854 6.48785 11.6401 6.40731 11.5596L3.97708 9.13017L1.24361 11.8637C1.0761 12.0312 0.196444 12.6386 0.028931 12.4711C-0.138582 12.3036 0.46876 11.423 0.636273 11.2564L3.36974 8.52281L0.940373 6.09251C0.85985 6.01196 0.814615 5.90273 0.814615 5.78883C0.814615 5.67494 0.85985 5.5657 0.940373 5.48515C1.53139 4.89412 2.37755 4.82625 2.98059 4.86663C3.27409 4.88719 3.56525 4.93318 3.8508 5.00408L6.54304 2.31263C6.52056 2.18181 6.50907 2.04934 6.50867 1.9166C6.50867 1.5472 6.60145 1.03863 7.01465 0.625424C7.09515 0.545128 7.2042 0.500025 7.31789 0.500001Z" fill="currentColor"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_11_147">
+                                                        <rect width="12" height="12" fill="white" transform="translate(0 0.5)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    <span>Unpin</span></button>
+                                            </div>
+                                        </td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                    <!-- Single Table Row -->
+                                    <tr class="left-badge left-badge-success">
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><small class="text-muted max-500">Lorem Reprehenderit voluptatibus consequuntur illo repellendus explicabo veniam, saepe perferendis laudantium quam vel numquam odit totam optio, quaerat iusto, nobis iste nostrum. Incidunt, optio placeat nemo natus dolores velit culpa inventore quos officia animi. Accusamus!</small></td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td>
+                                            <h6 class="text-muted">02/11/2022 - 02/14/2022</h6>
+                                            <div class="btn-group-area gap-2 d-flex align-items-center">
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 2</button>
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 1</button>
+                                                <button class="btn btn-sm border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button>
+                                            </div>
+                                        </td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                    <!-- Single Table Row -->
+                                    <tr class="left-badge">
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><small class="text-muted max-500">Lorem Reprehenderit voluptatibus consequuntur illo repellendus explicabo veniam, saepe perferendis laudantium quam vel numquam odit totam optio, quaerat iusto, nobis iste nostrum. Incidunt, optio placeat nemo natus dolores velit culpa inventore quos officia animi. Accusamus!</small></td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td>
+                                            <h6 class="text-muted">02/11/2022 - 02/14/2022</h6>
+                                            <div class="btn-group-area gap-2 d-flex align-items-center">
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 2</button>
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 1</button>
+                                                <button class="btn btn-sm border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button>
+                                            </div>
+                                        </td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                    <!-- Single Table Row -->
+                                    <tr class="left-badge">
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><small class="text-muted max-500">Lorem Reprehenderit voluptatibus consequuntur illo repellendus explicabo veniam, saepe perferendis laudantium quam vel numquam odit totam optio, quaerat iusto, nobis iste nostrum. Incidunt, optio placeat nemo natus dolores velit culpa inventore quos officia animi. Accusamus!</small></td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td>
+                                            <h6 class="text-muted">02/11/2022 - 02/14/2022</h6>
+                                            <div class="btn-group-area gap-2 d-flex align-items-center">
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 2</button>
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 1</button>
+                                                <button class="btn btn-sm border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button>
+                                            </div>
+                                        </td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                    <!-- Single Table Row -->
+                                    <tr class="left-badge left-badge-danger">
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><small class="text-muted max-500">Lorem Reprehenderit voluptatibus consequuntur illo repellendus explicabo veniam, saepe perferendis laudantium quam vel numquam odit totam optio, quaerat iusto, nobis iste nostrum. Incidunt, optio placeat nemo natus dolores velit culpa inventore quos officia animi. Accusamus!</small></td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td>
+                                            <h6 class="text-muted">02/11/2022 - 02/14/2022</h6>
+                                            <div class="btn-group-area gap-2 d-flex align-items-center">
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 2</button>
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 1</button>
+                                                <button class="btn btn-sm border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button>
+                                            </div>
+                                        </td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                    <!-- Single Table Row -->
+                                    <tr class="left-badge left-badge-danger">
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><small class="text-muted max-500">Lorem Reprehenderit voluptatibus consequuntur illo repellendus explicabo veniam, saepe perferendis laudantium quam vel numquam odit totam optio, quaerat iusto, nobis iste nostrum. Incidunt, optio placeat nemo natus dolores velit culpa inventore quos officia animi. Accusamus!</small></td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td>
+                                            <h6 class="text-muted">02/11/2022 - 02/14/2022</h6>
+                                            <div class="btn-group-area gap-2 d-flex align-items-center">
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 2</button>
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 1</button>
+                                                <button class="btn btn-sm border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button>
+                                            </div>
+                                        </td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                    <!-- Single Table Row -->
+                                    <tr class="left-badge">
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><small class="text-muted max-500">Lorem Reprehenderit voluptatibus consequuntur illo repellendus explicabo veniam, saepe perferendis laudantium quam vel numquam odit totam optio, quaerat iusto, nobis iste nostrum. Incidunt, optio placeat nemo natus dolores velit culpa inventore quos officia animi. Accusamus!</small></td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td>
+                                            <h6 class="text-muted">02/11/2022 - 02/14/2022</h6>
+                                            <div class="btn-group-area gap-2 d-flex align-items-center">
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 2</button>
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 1</button>
+                                                <button class="btn btn-sm border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button>
+                                            </div>
+                                        </td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                    <!-- Single Table Row -->
+                                    <tr class="left-badge left-badge-warning">
+                                        <td>
+                                            <div class="author d-flex align-items-center">
+                                                <div class="author__thumb me-3">
+                                                    <img src="https://via.placeholder.com/140x100" class="avatar rounded-circle" alt="">
+                                                </div>
+                                                <div class="author__content">
+                                                    <h5 class="fs-md text-nowrap mb-0">Mountain Charm</h5>
+                                                    <p class="mb-0 text-opacity-50 fs-xs text-muted">No Problem Thank You.</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><small class="text-muted max-500">Lorem Reprehenderit voluptatibus consequuntur illo repellendus explicabo veniam, saepe perferendis laudantium quam vel numquam odit totam optio, quaerat iusto, nobis iste nostrum. Incidunt, optio placeat nemo natus dolores velit culpa inventore quos officia animi. Accusamus!</small></td>
+                                        <td><button class="btn border text-nowrap">Booking</button></td>
+                                        <td>
+                                            <h6 class="text-muted">02/11/2022 - 02/14/2022</h6>
+                                            <div class="btn-group-area gap-2 d-flex align-items-center">
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 2</button>
+                                                <button class="btn btn-sm btn-primary text-nowrap">Level 1</button>
+                                                <button class="btn btn-sm border text-nowrap"><img src="assets/svg/pin-icon.svg" class="align-middle me-2" alt=""><span>Pin</span></button>
+                                            </div>
+                                        </td>
+                                        <td class="text-dark text-nowrap text-opacity-50"><span class="fas fa-clock align-middle me-2"></span><span>2 Minutes ago</span></td>
+                                    </tr>
+                                    <!-- End Single Table Row -->
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-need-id" role="tabpanel" aria-labelledby="nav-need-id-tab">..dsasdasdasdasdasdasd.</div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">..dasdas das dadasd asdasdasdasd adas.</div>
+                </div>
+
+                    
+            </div>
+        </div>
+    </main>
+
+    <!-- JS Custom Scrips -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

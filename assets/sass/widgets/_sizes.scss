@@ -1,0 +1,6 @@
+.avatar{
+    display: inline-flex;
+    width: var(--avatar-width, var(--avatar-size, 40px));
+    min-width: var(--avatar-min-width, var(--avatar-size, 40px));
+    height: var(--avatar-height, var(--avatar-size, 40px));
+}

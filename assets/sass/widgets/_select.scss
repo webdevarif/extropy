@@ -1,0 +1,36 @@
+.nice-select {
+    &:after{
+        content: unset;
+    }
+    .list {
+        width: 100%;
+    }
+}
+
+
+// DATE TIME PICKER
+.xdsoft_datetimepicker{
+    box-shadow: none;
+    font-family: $ff-primary;
+    border-radius: 0.3rem;
+
+    &, 
+    .xdsoft_calendar td, 
+    .xdsoft_calendar th,
+    .xdsoft_timepicker .xdsoft_time_box,
+    .xdsoft_timepicker .xdsoft_time_box>div>div{
+        border-color: $border-color;
+    }
+    
+    .xdsoft_calendar td, 
+    .xdsoft_calendar th,
+    .xdsoft_timepicker .xdsoft_time_box>div>div{
+        background: #fafafa;
+    }
+
+    .xdsoft_calendar td.xdsoft_default, 
+    .xdsoft_calendar td.xdsoft_current, 
+    .xdsoft_timepicker .xdsoft_time_box>div>div.xdsoft_current{
+        background: $primary;
+    }
+}

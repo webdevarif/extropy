@@ -1,0 +1,122 @@
+body{
+    background-color: #FAFAFA;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main--content{
+    margin: var(--main-content-margin, 15px);
+    padding: var(--main-content-padding, 15px);
+    background: #fff;
+
+    @include media-breakpoint-up(lg){
+        --main-content-margin: 30px;
+        --main-content-padding: 20px;
+    }
+}
+
+.dropdown-toggle{
+    &:after{
+        font-family: $ff-fa;
+        content: "\f107";
+        vertical-align: middle;
+        border: 0;
+    }
+}
+
+
+.table-cover{
+    table{
+        border-collapse: separate;
+        border-spacing: 0 15px;
+        width: 100%;
+
+        tbody tr{
+            margin-bottom: 20px;
+            padding: 10px;
+            @include media-breakpoint-down(xxl){
+                display: grid;
+            }
+            
+            @include media-breakpoint-between(md, xxl){
+                grid-template-columns: 1fr 1fr;
+
+                td:nth-last-child(n+3){
+                    border-bottom: 0px;
+                }
+                td:nth-child(odd){
+                    border-right: 0px;
+                }
+                td{
+                    border-left: 1px solid $border-color;
+                    border-right: 1px solid $border-color;
+                }
+            }
+            @include media-breakpoint-down(md){
+                td{
+                    border-left: 1px solid $border-color;
+                    border-right: 1px solid $border-color;
+                }
+                td:not(:last-child){
+                    border-bottom: 0px;
+                }
+            }
+        }
+        
+        tbody tr td:first-child{
+            border-left: 1px solid $border-color;
+            @include media-breakpoint-up(xxl){
+                border-top-left-radius: 0.3rem;
+                border-bottom-left-radius: 0.3rem;
+            }
+        }
+        tbody tr td:last-child{
+            border-right: 1px solid $border-color;
+            @include media-breakpoint-up(xxl){
+                border-top-right-radius: 0.3rem;
+                border-bottom-right-radius: 0.3rem;
+            }
+
+            @include media-breakpoint-up(xxl){
+                text-align: right;
+                width: 170px;
+            }
+        }
+    
+        th, td {
+            border-top: 1px solid $border-color;
+            border-bottom: 1px solid $border-color;
+            padding: 15px
+            
+        }
+    }
+}
+
+
+.max-500{
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+}
+
+.left-badge{
+    position: relative;
+
+    td:first-child:before{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        background: var(--tr-badge-bg, #E4E4E4);
+        top: 0;
+        border-top-left-radius: 20rem;
+        border-bottom-left-radius: 20rem;
+        left: -10px;
+    }
+
+    &-danger{--tr-badge-bg: #{$danger};}
+    &-success{--tr-badge-bg: #{$success};}
+    &-warning{--tr-badge-bg: #{$success};}
+}
