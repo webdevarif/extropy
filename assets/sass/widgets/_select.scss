@@ -1,9 +1,14 @@
 .nice-select {
+
     &:after{
         content: unset;
     }
     .list {
         width: 100%;
+
+        li:not(:last-child){
+            border-bottom: 1px solid $gray-200;
+        }
     }
 }
 

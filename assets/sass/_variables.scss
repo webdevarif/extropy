@@ -8,8 +8,11 @@ $font-family-sans-serif: $ff-primary;
 $primary: #2E8DF3;
 $primary-alpha: #F1F8FF;
 $danger: #F55A2D;
+$gray-600: #6E7C88;
+$gray-900: #143249;
 
 $border-color: #EBEBEB;
+$rounded-base: var(--rounded-base, 0.5rem);
 $dropdown-border-color: $border-color;
 
 
@@ -33,3 +36,15 @@ $nav-tabs-link-active-color: $primary;
 $nav-tabs-link-active-bg: $primary-alpha;
 $nav-tabs-link-active-border-color: transparent;
 $nav-tabs-link-hover-border-color: $nav-tabs-link-active-border-color;
+
+// BUTTON
+$btn-border-radius: $rounded-base;
+
+
+// CARD
+$card-border-radius: $rounded-base;
+
+// ROOT
+:root{
+    --chat-box-height: 500px
+}
