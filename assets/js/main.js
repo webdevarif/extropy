@@ -245,8 +245,10 @@
 	=============================================*/
 	$('[nice-select]').niceSelect();
 
-    $('[date-time-picker]').datetimepicker({
+    $('[date-picker]').datetimepicker({
+        timepicker:false
     });
+    $('[date-time-picker]').datetimepicker({});
 
 
 })(jQuery);

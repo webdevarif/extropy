@@ -8,6 +8,7 @@ $font-family-sans-serif: $ff-primary;
 $primary: #2E8DF3;
 $primary-alpha: #F1F8FF;
 $danger: #F55A2D;
+$success: #008000;
 $gray-600: #6E7C88;
 $gray-900: #143249;
 
@@ -38,13 +39,16 @@ $nav-tabs-link-active-border-color: transparent;
 $nav-tabs-link-hover-border-color: $nav-tabs-link-active-border-color;
 
 // BUTTON
-$btn-border-radius: $rounded-base;
+// $btn-border-radius: $rounded-base;
 
+// Group List
+$list-group-border-color: $border-color;
 
 // CARD
 $card-border-radius: $rounded-base;
 
 // ROOT
 :root{
-    --chat-box-height: 500px
+    --chat-box-height: 500px;
+    --rounded-base: #{$rounded-base};
 }

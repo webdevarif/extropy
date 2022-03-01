@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extropy || Html Templates</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- font-family: 'DM Sans', sans-serif; -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/simplebar.css">
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
+    <!-- FullCalendar -->
+    <link rel="stylesheet" href="assets/libs/fullCalendar/main.css">
+
+    <!-- Css FIles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- JS Default FIles -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <!-- JS Plugins -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/simplebar.min.js"></script>
+    <!-- FullCalendar -->
+    <script src="assets/libs/fullCalendar/main.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    
+    <script src="assets/js/jquery.datetimepicker.full.min.js"></script>
+    <script src="assets/js/avatar-solution.js"></script>
+</head>
+
+<body>
+
+    <main class="main-wrapper">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo.svg" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase active" aria-current="page" href="#">Message</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="#">Valendar</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Property
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Property 01</a></li>
+                                    <li><a class="dropdown-item" href="#">Property 02</a></li>
+                                    <li><a class="dropdown-item" href="#">Property 03</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Property 04</a></li>
+                                    <li><a class="dropdown-item" href="#">Property 04</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                        <div class="header__end">
+                            <div class="btn-group">
+                                <button type="button" class="btn shadow-none dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                    <img src="https://via.placeholder.com/200x300" class="avatar rounded-circle me-2" alt="">
+                                    <span class="align-middle">Pattyh</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-lg-end">
+                                    <li><button class="dropdown-item" type="button"><i class="fal fa-cog me-2 align-middle"></i><span>Settings</span></button></li>
+                                    <li><button class="dropdown-item" type="button"><i class="fal fa-user me-2 align-middle"></i><span>need-id</span></button></li>
+                                    <li><button class="dropdown-item" type="button"><i class="fal fa-cog me-2 align-middle"></i><span>Change Password</span></button></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fal fa-power-off me-2 align-middle"></i><span>Log Out</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="main--content p-md-4">
+
+            <div class="heading-area mb-4 border-bottom pb-4">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-6">
+                            <h2 class="text-dark fs-xl">Door Codes</h2>
+                        </div>
+                        <div class="col-md-6 col-6 text-end">
+                            <button class="btn btn-danger">Create Codes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center g-4 mb-4">
+                <!-- Single Col -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="form-group">
+                        <label for="label-start--date" class="mb-2 label-sm">Start Date</label>
+                        <input type="text" id="label-start--date" class="bg-light form-select" autocomplete="off" placeholder="Select Date" date-time-picker>
+                    </div>
+                </div>
+                <!-- Single Col -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="form-group">
+                        <label for="label-end--date" class="mb-2 label-sm">End Date</label>
+                        <input type="text" id="label-end--date" class="bg-light form-select" autocomplete="off" placeholder="Select Date" date-time-picker>
+                    </div>
+                </div>
+                <!-- Single Col -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="form-group">
+                        <label for="label-start--date" class="mb-2 label-sm">Name</label>
+                        <input type="text" id="label-start--date" placeholder="Type Here" class="bg-light form-control">
+                    </div>
+                </div>
+                <!-- Single Col -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="form-group">
+                        <label for="label-start--date" class="mb-2 label-sm">Property</label>
+                        <select name="" id="label-select-property" class="bg-light form-select" nice-select>
+                            <option value="#">Select Property</option>
+                            <option value="#">Property 01</option>
+                            <option value="#">Property 02</option>
+                            <option value="#">Property 03</option>
+                            <option value="#">Property 04</option>
+                            <option value="#">Property 05</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card card-body p-lg-4 d-inline-flex border-0 bg-success bg-opacity-10 text-success rounded-4">
+                        <h5 class="text-success">The Dooe code for Cozy Bear Lodge at 1805 Rose Ct. sevierville. TN 37876 IS: 107-555-3792</h5>
+                        <p>Start: 26-02-2022</p>
+                        <p>End: 26-02-2022</p>
+                        <p>To Unlock: Enter The code, Wait for the green Lights, Turn the konb Unlock</p>
+                        <p>To lock: Enter The code, Wait for the green Lights, Turn the konb lock</p>
+                    </div>
+                </div>
+            </div>
+                    
+        </div>
+    </main>
+
+    <!-- JS Custom Scrips -->
+    <script src="assets/js/main.js"></script>
+    <script>
+
+        // RENDER CALENDAR
+        document.addEventListener('DOMContentLoaded', function() {
+            var jsonData = [
+                {
+                    title: 'All Day Event',
+                    start: '2022-03-01'
+                },
+                {
+                    title: 'Conference',
+                    start: '2022-03-01',
+                    end: '2022-03-03'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2022-03-12T10:30:00',
+                    end: '2022-03-12T12:30:00'
+                },
+                {
+                    title: 'Lunch',
+                    start: '2022-03-12T12:00:00'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2022-03-12T14:30:00'
+                },
+                {
+                    title: 'Happy Hour',
+                    start: '2022-03-12T17:30:00'
+                },
+                {
+                    title: 'Dinner',
+                    start: '2022-03-12T20:00:00'
+                },
+                {
+                    title: 'Click for Google',
+                    url: 'http://google.com/',
+                    start: '2022-03-28'
+                }
+            ];
+            var calendarEl = document.getElementById('embed-calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+            headerToolbar: {
+                left: 'title',
+                right: 'prev,next'
+            },
+            initialDate: new Date(),
+            navLinks: false, // can click day/week names to navigate views
+            selectable: false,
+            firstDay: 1,
+            selectMirror: true,
+            fixedWeekCount: false,
+            editable: false,
+            dayMaxEvents: true, // allow "more" link when too many events
+            events: jsonData,
+
+            eventRender: function(event) {},
+            
+    		eventClick: function(calEvent) {
+                var result = jsonData;
+    			$(result).each(function(index, value){
+        			if (value.id == calEvent.event.id)
+        			{
+        				$('#eventTitleSet').text(calEvent.event.title);
+        				$('#eventDetails').html(value.description);
+        				$('#startDateSet').text('Start Date: ' + value.start);
+        				$('#endDateSet').text('End Date: ' + value.end);
+        				if (value.url_set.length != 0)
+        				{
+        					$('#setLink').html('<a href="' + value.url_set + '" class="btn btn-gradient-primary" target"_blank">Join Meeting</a>');
+        				} else{
+        					$('#setLink').html(' ');
+        				}
+
+        			}
+        		});
+    			$('.showModals').show();
+    		},
+            moreLinkContent:function(args){
+                //alert(args.num);
+                //return '+'+args.num+' More items';
+                const Links = [];
+                for (let i = 1; i < 5 && i <= args.num ; i++) {
+                    let count_element = document.createElement('span');
+                    count_element.setAttribute('class', 'EventDots');
+                    count_element.innerHTML = '&nbsp;';
+                    Links.push(count_element)
+                }
+                return {
+                    domNodes:Links,
+                }
+            },
+        });
+		calendar.render();
+	});
+
+
+
+
+
+
+        // On Load and Auto Scroll Down Chat List Item
+        scrollDownMessage();
+        function scrollDownMessage() {
+          // Scroll Down
+          $(".chat-messages .list-chat").animate({
+            scrollTop: $(".chat-messages .list-chat").prop("scrollHeight")
+          }, 250);
+        }    
+        
+        // Message Textarea Onsubmit Function 
+        function messageSubmit(event) {
+          event.preventDefault();
+          let msg_input_target = $("textarea#user-msg"),
+            msg_content = msg_input_target.val(),
+            htmMessage = '<li class="list-chat__single me">' +                        
+                            '<div class="list-chat__content">' +
+                                '<div class="list-chat__msg bg-primary text-light">' + msg_content + '</div>' +
+                                    '<div class="list-chat__date"><i class="fal fa-check"></i><span>sent 7: 31 AM</span></div>' +
+                                '</div>' +
+                            '</li>';
+    
+          if (msg_content != "") {
+            // Append Message
+            $(".chat-messages .list-chat").append(htmMessage);
+            // Input Box Blank
+            msg_input_target.val("");
+            scrollDownMessage();
+          } else {
+            alert("Please input Some text");
+          }
+        }
+      </script>
+</body>
+
+</html>

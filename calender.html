@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extropy || Html Templates</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- font-family: 'DM Sans', sans-serif; -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/simplebar.css">
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
+    <!-- FullCalendar -->
+    <link rel="stylesheet" href="assets/libs/fullCalendar/main.css">
+
+    <!-- Css FIles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- JS Default FIles -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <!-- JS Plugins -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/simplebar.min.js"></script>
+    <!-- FullCalendar -->
+    <script src="assets/libs/fullCalendar/main.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    
+    <script src="assets/js/jquery.datetimepicker.full.min.js"></script>
+    <script src="assets/js/avatar-solution.js"></script>
+</head>
+
+<body>
+
+    <main class="main-wrapper">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo.svg" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase active" aria-current="page" href="#">Message</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="#">Valendar</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Property
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Property 01</a></li>
+                                    <li><a class="dropdown-item" href="#">Property 02</a></li>
+                                    <li><a class="dropdown-item" href="#">Property 03</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Property 04</a></li>
+                                    <li><a class="dropdown-item" href="#">Property 04</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                        <div class="header__end">
+                            <div class="btn-group">
+                                <button type="button" class="btn shadow-none dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                    <img src="https://via.placeholder.com/200x300" class="avatar rounded-circle me-2" alt="">
+                                    <span class="align-middle">Pattyh</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-lg-end">
+                                    <li><button class="dropdown-item" type="button"><i class="fal fa-cog me-2 align-middle"></i><span>Settings</span></button></li>
+                                    <li><button class="dropdown-item" type="button"><i class="fal fa-user me-2 align-middle"></i><span>need-id</span></button></li>
+                                    <li><button class="dropdown-item" type="button"><i class="fal fa-cog me-2 align-middle"></i><span>Change Password</span></button></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fal fa-power-off me-2 align-middle"></i><span>Log Out</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="main--content p-md-4">
+
+            <div class="heading-area border-bottom pb-4 mb-4">
+                <div class="container-fluid">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-xl-6">
+                            <div class="d-flex flex-wrap gap-4 align-items-center">
+                                <h2 class="text-dark fs-xl mb-0">Calender</h2>
+                                <div class="form-group">
+                                    <input type="text" class="bg-light form-select" placeholder="Select Date" date-picker>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="d-flex gap-4 align-items-center justify-content-lg-end">
+                                <button class="btn btn-outline-danger">
+                                    <i class="align-middle me-2 fal fa-repeat"></i>
+                                    <span>Sync</span>
+                                </button>
+                                <button class="btn btn-danger" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal--add-new-block">
+                                    <span>Add Block</span>
+                                </button>
+                                <button class="btn btn-danger" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal--add-new-clean">
+                                    <span>Add clean</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-xxl-3 col-lg-4">
+                    <div class="form-group mb-4 position-relative">
+                        <i class="ms-3 fal fa-search position-absolute top-50 start-0 translate-middle-y"></i>
+                        <input type="text" class="ps-5 form-control bg-light" placeholder="Search Property">
+                    </div>
+                    
+                    <ul class="list-group bg-light py-5 list-group-flush rounded-4">
+                        <!-- Single List Item -->
+                        <li class="list-group-item py-3 bg-transparent">
+                            Applewood Lodge (AL) 
+                            <span class="float-end d-flex align-items-center gap-3">
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-1.svg" alt="">
+                                </span>
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-2.svg" alt="">
+                                </span>
+                            </span>
+                        </li>
+                        <!-- Single List Item -->
+                        <li class="list-group-item py-3 bg-transparent">
+                            Cozy Bear Lodge (CBL) 
+                            <span class="float-end d-flex align-items-center gap-3">
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-1.svg" alt="">
+                                </span>
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-2.svg" alt="">
+                                </span>
+                            </span>
+                        </li>
+                        <!-- Single List Item -->
+                        <li class="list-group-item py-3 bg-transparent">
+                            Green Sky Lodge 
+                            <span class="float-end d-flex align-items-center gap-3">
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-1.svg" alt="">
+                                </span>
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-2.svg" alt="">
+                                </span>
+                            </span>
+                        </li>
+                        <!-- Single List Item -->
+                        <li class="list-group-item py-3 bg-transparent">
+                            Lazy Bear Lodge 
+                            <span class="float-end d-flex align-items-center gap-3">
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-1.svg" alt="">
+                                </span>
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-2.svg" alt="">
+                                </span>
+                            </span>
+                        </li>
+                        <!-- Single List Item -->
+                        <li class="list-group-item py-3 bg-transparent">
+                            Rocky Top Lodge 
+                            <span class="float-end d-flex align-items-center gap-3">
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-1.svg" alt="">
+                                </span>
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-2.svg" alt="">
+                                </span>
+                            </span>
+                        </li>
+                        <!-- Single List Item -->
+                        <li class="list-group-item py-3 bg-transparent">
+                            Green Sky Lodge
+                            <span class="float-end d-flex align-items-center gap-3">
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-1.svg" alt="">
+                                </span>
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-2.svg" alt="">
+                                </span>
+                            </span>
+                        </li>
+                        <!-- Single List Item -->
+                        <li class="list-group-item py-3 bg-transparent">
+                            Bear Hug
+                            <span class="float-end d-flex align-items-center gap-3">
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-1.svg" alt="">
+                                </span>
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-2.svg" alt="">
+                                </span>
+                            </span>
+                        </li>
+                        <!-- Single List Item -->
+                        <li class="list-group-item py-3 bg-transparent">
+                            Rocky Top Lodge
+                            <span class="float-end d-flex align-items-center gap-3">
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-1.svg" alt="">
+                                </span>
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-2.svg" alt="">
+                                </span>
+                            </span>
+                        </li>
+                        <!-- Single List Item -->
+                        <li class="list-group-item py-3 bg-transparent">
+                            Bear Nesessities
+                            <span class="float-end d-flex align-items-center gap-3">
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-1.svg" alt="">
+                                </span>
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-2.svg" alt="">
+                                </span>
+                            </span>
+                        </li>
+                        <!-- Single List Item -->
+                        <li class="list-group-item py-3 bg-transparent">
+                            Lazy Bear Lodge
+                            <span class="float-end d-flex align-items-center gap-3">
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-1.svg" alt="">
+                                </span>
+                                <span class="icon-25">
+                                    <img src="assets/img/li-icon-2.svg" alt="">
+                                </span>
+                            </span>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-xxl-9 col-lg-8">
+                    <div class="calendar-heading text-end">
+                        <ul class="timegrid-calender__data-list list-inline">
+                            <li class="list-inline-item">
+                                <span class="circle bg-dark bg-opacity-25"></span>
+                                <span class="name">N/A</span>
+                            </li>
+                            <li class="list-inline-item">
+                                <span class="circle bg-dark"></span>
+                                <span class="name">Owner Block</span>
+                            </li>
+                            <li class="list-inline-item">
+                                <span class="circle bg-primary"></span>
+                                <span class="name">Booking</span>
+                            </li>
+                            <li class="list-inline-item">
+                                <span class="circle bg-danger"></span>
+                                <span class="name">Double Booking</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="timegrid-calender" id="embed-inline-calender"></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- MODALS -->
+    <div class="modal fade" id="modal--add-new-block" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal--add-new-blockLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <form action="#">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-bold" id="modal--add-new-blockLabel">ADD NEW BLOCK</h5>
+                        <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="label-property" class="label-sm">Property</label>
+                            <select name="" id="label-property" class="bg-light mb-3 form-select" nice-select>
+                                <option value="#">Property 01</option>
+                                <option value="#">Property 02</option>
+                                <option value="#">Property 03</option>
+                                <option value="#">Property 04</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="label-start--date" class="label-sm">Start Date</label>
+                            <input type="text" class="mb-3 bg-light form-select" id="label-start--date" placeholder="Select Date" date-picker>
+                        </div>
+                        <div class="form-group">
+                            <label for="label-end--date" class="label-sm">End Date</label>
+                            <input type="text" class="mb-3 bg-light form-select" id="label-end--date" placeholder="Select Date" date-picker>
+                        </div>
+                        <div class="form-group">
+                            <label for="label-property" class="label-sm">Notes</label>
+                            <textarea name="" id="" cols="30" rows="4" class="bg-light form-control" placeholder="Add Notes"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-outline-danger me-auto" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Add New Clean -->
+    <div class="modal fade" id="modal--add-new-clean" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal--add-new-cleanLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <form action="#">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-bold" id="modal--add-new-cleanLabel">ADD NEW CLEAN</h5>
+                        <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="label-property" class="label-sm">Property</label>
+                            <select name="" id="label-property" class="bg-light mb-3 form-select" nice-select>
+                                <option value="#">Select Property</option>
+                                <option value="#">Property 02</option>
+                                <option value="#">Property 03</option>
+                                <option value="#">Property 04</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="label-clean--date" class="label-sm">Clean Date</label>
+                            <input type="text" class="mb-3 bg-light form-select" id="label-clean--date" placeholder="Select Date" date-picker>
+                        </div>
+                        <div class="form-group">
+                            <label for="label-cleaning-type" class="label-sm">Cleaning type</label>
+                            <select name="" id="label-cleaning-type" class="bg-light mb-3 form-select" nice-select>
+                                <option value="#">Select Cleaning Type</option>
+                                <option value="#">Property 02</option>
+                                <option value="#">Property 03</option>
+                                <option value="#">Property 04</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="label-property" class="label-sm">Notes</label>
+                            <textarea name="" id="" cols="30" rows="4" class="bg-light form-control" placeholder="Add Notes"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-outline-danger me-auto" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Add New Clean -->
+    <div class="modal fade modal--add-event-details" id="modal--add-event-details" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal--add-event-detailsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-body">
+                    <p><strong>Name: </strong>Murad Hossain</p>
+                    <p><strong>End: </strong>muraddc0@gmail.com</p>
+                    <p><strong>Phone: </strong>-</p>
+                    <p><strong>Start Date: </strong>26-02-2022</p>
+                    <p><strong>End Date: </strong>26-02-2022</p>
+                    <p class="mb-0"><strong>Guests: </strong>6</p>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- JS Custom Scrips -->
+    <script src="assets/js/main.js"></script>
+    <script>
+
+        // RENDER CALENDAR
+        document.addEventListener('DOMContentLoaded', function() {
+            
+        var JsonData = [
+            {
+                title: 'All Day Event',
+                start: '2022-03-01',
+                end: '2022-03-07',
+                backgroundColor: 'rgba(46, 141, 243, 0.1)',
+                borderColor: '#ff6f00',
+                textColor: '#2E8DF3',
+                pic: 'https://via.placeholder.com/100x',
+                name: 'Della',
+                user: 'c'
+            },
+            {
+                title: 'All Day Event',
+                start: '2022-03-02',
+                end: '2022-03-06',
+                backgroundColor: 'rgba(46, 141, 243, 0.1)',
+                borderColor: '#ff6f00',
+                textColor: '#2E8DF3',
+                pic: 'https://via.placeholder.com/100x',
+                name: 'Della',
+                user: 'c'
+            },
+            {
+                title: 'All Day Event',
+                start: '2022-03-03',
+                end: '2022-03-08',
+                backgroundColor: 'rgba(46, 141, 243, 0.1)',
+                borderColor: '#ff6f00',
+                textColor: '#2E8DF3',
+                pic: 'https://via.placeholder.com/100x',
+                name: 'Della',
+                user: 'c'
+            },
+            {
+                title: 'All Day Event',
+                start: '2022-03-02',
+                end: '2022-03-06',
+                backgroundColor: 'rgba(46, 141, 243, 0.1)',
+                borderColor: '#ff6f00',
+                textColor: '#2E8DF3',
+                pic: 'https://via.placeholder.com/100x',
+                name: 'Della',
+                user: 'c'
+            },
+            {
+                title: 'All Day Event',
+                start: '2022-02-28',
+                end: '2022-03-03',
+                backgroundColor: 'rgba(46, 141, 243, 0.1)',
+                borderColor: '#ff6f00',
+                textColor: '#2E8DF3',
+                pic: 'https://via.placeholder.com/100x',
+                name: 'Della',
+                user: 'c'
+            },
+            {
+                title: 'All Day Event',
+                start: '2022-03-03',
+                end: '2022-03-10',
+                backgroundColor: 'rgba(46, 141, 243, 0.1)',
+                borderColor: '#ff6f00',
+                textColor: '#2E8DF3',
+                pic: 'https://via.placeholder.com/100x',
+                name: 'Della',
+                user: 'c'
+            },
+            {
+                title: 'Long Event',
+                start: '2022-02-28',
+                end: '2022-03-05',
+                backgroundColor: '#143249',
+                borderColor: '#1E2B37',
+                textColor: '#2E8DF3',
+            },
+        ];
+        
+        var calendarEl = document.getElementById('embed-inline-calender');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            weekends: true, //Show the weekends
+            initialView: 'dayGrid',
+            headerToolbar: { left: 'prev title', right: 'next' },
+
+            visibleRange: function(currentDate) {
+                // Generate a new date for manipulating in the next step
+                var startDate = new Date(currentDate.valueOf());
+                var endDate = new Date(currentDate.valueOf());
+
+                // Adjust the start & end dates, respectively
+                startDate.setDate(startDate.getDate() - 1); // One day in the past
+                endDate.setDate(endDate.getDate() + 10); // Two days into the future
+
+                return { start: startDate, end: endDate };
+            },
+
+            eventContent: function(arg) {
+                let italicEl = document.createElement('div');
+                console.log("evtn", arg);
+
+                let eventHtml = '<div class="event-item">' + 
+                                    '<div class="event-item__img"><img src="assets/img/li-icon-1.svg" /></div>' + 
+                                    '<div class="event-item__name">Della</div>' + 
+                                    '<div class="event-item__user">C</div>' + 
+                                '</div>';
+                italicEl.innerHTML = eventHtml
+
+            let arrayOfDomNodes = [ italicEl ]
+                return { domNodes: arrayOfDomNodes }
+            },
+            dayMaxEvents: true, // allow "more" link when too many events
+            
+            events: JsonData,
+
+            eventRender: function(event) {},
+    		eventClick: function(calEvent) {
+                console.log("Clicked");
+    			$(JsonData).each(function(index, value){
+
+        			// if (value.id == calEvent.event.id)
+                        // console.log("calEvent", calEvent.event.id);
+                        // {
+                        // 	$('#eventTitleSet').text(calEvent.event.title);
+                        // 	$('#eventDetails').html(value.description);
+                        // 	$('#startDateSet').text('Start Date: ' + value.start);
+                        // 	$('#endDateSet').text('End Date: ' + value.end);
+                        // 	if (value.url_set.length != 0)
+                        // 	{
+                        // 		$('#setLink').html('<a href="' + value.url_set + '" class="btn btn-gradient-primary" target"_blank">Join</a>');
+                        // 	} else{
+                        // 		$('#setLink').html(' ');
+                        // 	}
+        			// }
+        		});
+                var EventModal = new bootstrap.Modal(document.getElementById('modal--add-event-details'), {});
+                    EventModal.show();
+    		},
+        });
+            calendar.render();
+        });
+
+
+        // On Load and Auto Scroll Down Chat List Item
+        scrollDownMessage();
+        function scrollDownMessage() {
+          // Scroll Down
+          $(".chat-messages .list-chat").animate({
+            scrollTop: $(".chat-messages .list-chat").prop("scrollHeight")
+          }, 250);
+        }    
+        
+        // Message Textarea Onsubmit Function 
+        function messageSubmit(event) {
+          event.preventDefault();
+          let msg_input_target = $("textarea#user-msg"),
+            msg_content = msg_input_target.val(),
+            htmMessage = '<li class="list-chat__single me">' +
+                            '<div class="list-chat__content">' +
+                                '<div class="list-chat__msg bg-primary text-light">' + msg_content + '</div>' +
+                                    '<div class="list-chat__date"><i class="fal fa-check"></i><span>sent 7: 31 AM</span></div>' +
+                                '</div>' +
+                            '</li>';
+          if (msg_content != "") {
+            // Append Message
+            $(".chat-messages .list-chat").append(htmMessage);
+            // Input Box Blank
+            msg_input_target.val("");
+            scrollDownMessage();
+          } else {
+            alert("Please input Some text");
+          }
+        }
+    </script>
+</body>
+
+</html>

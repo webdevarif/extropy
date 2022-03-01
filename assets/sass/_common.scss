@@ -24,7 +24,13 @@ a{
     border: 1px solid $gray-100;
   }
 
+.label-sm{
+    font-size: 13px;
+}
 
+textarea{
+    resize: none;
+}
   
 .main--content{
     margin: var(--main-content-margin, 15px);
